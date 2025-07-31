@@ -11,10 +11,8 @@
     }
 
     const secondCell = cells[1];
-    const lastCell = cells[cells.length - 1];
-
     const clonedCell = secondCell.cloneNode(true);
 
-    row.insertBefore(clonedCell, lastCell);
+    row.insertBefore(clonedCell, cells[cells.length - 1]);
   });
 });
